@@ -13,10 +13,10 @@ export default function Navbar() {
     >
       <Link
         className="flex items-center gap-2"
-        to="/"
+        to="/zhen-portfolio"
         onClick={() => {
           setActive("");
-          window.location.hash = "about";
+          document.getElementsByTagName("main")[0].scrollTo(0, 0);
         }}
       >
         <img src={Logo} alt="Zhen's Portfolio Site Logo" width={50} />
@@ -30,7 +30,7 @@ export default function Navbar() {
             onClick={() => setActive(item.href)}
           >
             <a
-              href={`${item.title === "Resume" ? "" : "/#"}${item.href}`}
+              href={`${item.title === "Resume" ? "" : "#"}${item.href}`}
               alt={`${item.title} Section Link`}
               className={`
                 h-full flex items-center 

@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <BrowserRouter>
-      <main>
+      <main className="scroll-pt-16">
         <div className="flex flex-col relative h-full">
           <Navbar />
           <Banner />

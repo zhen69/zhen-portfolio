@@ -29,7 +29,7 @@ export const introduction = {
       "https://drive.google.com/file/d/1gU3luIsSJe1v09cRk_jet9at5vp7moar/view?usp=sharing",
   },
   description:
-    "My passion for Software Engineering has grown from a high school interest into a deep commitment. I see coding as a complex puzzle, where designing algorithms and integrating components to achieve precise results is both challenging and rewarding. I aspire to pursue a career that nurtures my interests while enabling me to develop impactful solutions.",
+    "Hi there! I'm currently a senior at Stony Brook University, pursuing a B.S. in Computer Science with Honors. My passion for Software Engineering has grown from a high school interest into a deep commitment. I see coding as a complex puzzle, where designing algorithms and integrating components to achieve precise results is both challenging and rewarding. I aspire to pursue a career that nurtures my interests while enabling me to develop impactful solutions.",
 };
 
 import html from "../assets/tech/html.png";

@@ -3,10 +3,10 @@ import { projects, technicalCommunicationProjects } from "../data";
 function ProjectCard({ title, img, time, description }) {
   return (
     <div
-      className="flex w-8/12 rounded-lg mb-3"
+      className="flex w-8/12 rounded-lg mb-3 h-[335px] overflow-hidden"
     >
       <img src={img} width="50%" className="rounded-l-lg" />
-      <div className="bg-card w-full rounded-r-lg p-5 flex flex-col gap-y-3">
+      <div className="bg-card w-full rounded-r-lg p-5 flex flex-col gap-y-3 h-full overflow-y-auto">
         <h3 className="text-xl font-semibold">{title}</h3>
         <p className="mb-2">{time}</p>
         <ul className="flex flex-col gap-2 list-disc px-5">

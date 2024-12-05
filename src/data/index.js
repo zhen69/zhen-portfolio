@@ -20,6 +20,8 @@ export const introduction = {
     "I'm a Programmer",
     1500,
   ],
+  education: "B.S. in Computer Science | Stony Brook University | Class of 2025",
+  email: "zhenwei.liao99@gmail.com",
   links: {
     github: "https://github.com/zhen69",
     linkedin: "https://www.linkedin.com/in/zhenwei-liao-148baa273/",
@@ -151,9 +153,21 @@ export const experiences = [
 ];
 
 import frgx_ai from "../assets/projects/frgx-ai-project.png";
+import frgx_migrator from "../assets/projects/dotnet_migration_project.png";
 import orcanet from "../assets/projects/orcanet-project.png";
+import word_count from "../assets/projects/word-count-project.png";
+import kalm from "../assets/projects/kalm-project.png";
 
 export const projects = [
+  {
+    title: "KALM",
+    time: "Aug 2024 - Present",
+    img: kalm,
+    description: [
+      "Developed a React-based user-friendly GUI to simplify interactions with KALM, improving system usability and accessibility for non-technical users by reducing the need for complex CLI commands.",
+      "Utilized Flask for backend development, handling key functionalities such as submitting marked training data, parsing sentences to extract semantic relations, and answering questions based on authored knowledge.",
+    ],
+  },
   {
     title: "AI Content Fix Function App",
     time: "Jun 2024 - Aug 2024",
@@ -162,6 +176,26 @@ export const projects = [
       "Implemented an Azure Function App (Service Bus Trigger and Http Trigger) that utilizes the GPT API to auto-fix the product description HTML source code on the production website.",
       "Developed a user-friendly GUI using vanilla JS that enables the user to approve the fixtures made by GPT.",
       "Implemented a separate process in an existing console application to update the product description sheet via the Google Sheets API, enhancing data accuracy and workflow efficiency.",
+    ],
+  },
+  {
+    title: ".NET 6 To 8 Migrator",
+    time: "Jun 2024 - Aug 2024",
+    img: frgx_migrator,
+    description: [
+      "Contributed to a C# CLI tool that migrates Azure Function App from .NET 6 to .NET 8 Isolated.",
+      "Created processes that updates the csproj configuration file, replaces the directives in each file with the corresponding .NET 8 directives, and interacts with the Microsoft Upgrade Assistant CLI tool via the command line.",
+      "Identified and resolved bugs during the validation phase to ensure software quality.",
+      "Developed unit tests to cover edge cases, enhancing code robustness and reliability.",
+    ],
+  },
+  {
+    title: "Word Check",
+    time: "Aug 2024 - Sept 2024",
+    img: word_count,
+    description: [
+      "Created a simple web interface that allows users to input a sentence and check the number of letters/words in the sentence.",
+      "Developed a simple algorithm that checks for potential spelling errors.",
     ],
   },
   {

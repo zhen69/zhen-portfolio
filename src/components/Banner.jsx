@@ -2,11 +2,9 @@ import ProfileImg from "../assets/profile.png";
 import { TypeAnimation } from "react-type-animation";
 import { introduction } from "../data";
 import { Linkedin, Github, FilePdfFill } from "react-bootstrap-icons";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Banner() {
-  const navigate = useNavigate();
-
   return (
     <section
       id="about"
@@ -29,14 +27,21 @@ export default function Banner() {
           className="text-4xl font-semibold lg:absolute"
         />
         <p className="lg:mt-20 mt-5">{introduction.description}</p>
+        <p className="mt-5 text-lg">
+          <span className="font-semibold">Education: </span>
+          {introduction.education}
+        </p>
+        <p className="mt-5 text-lg">
+          <span className="font-semibold">Email: </span>
+          {introduction.email}
+        </p>
         <div className="flex items-center gap-7 mt-7">
           <button
-            onClick={() => navigate("/#contact")}
             className="bg-gradient-to-r 
                 from-blue-600 to-purple-500
                 py-3 px-4 rounded-md"
           >
-            {"Let's Connect"}
+            <a href="#contact" alt="Contact Section Link">{"Let's Connect"}</a>
           </button>
           <Link to={introduction.links.linkedin} title="Linkedin">
             <Linkedin size={40} />

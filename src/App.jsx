@@ -7,7 +7,7 @@ import ProjectSection from "./components/Project";
 import ContactSection from "./components/Contact";
 import Footer from "./components/Footer";
 
-function App() {
+export default function App() {
   return (
     <BrowserRouter>
       <main className="scroll-pt-16">
@@ -24,5 +24,3 @@ function App() {
     </BrowserRouter>
   );
 }
-
-export default App;

@@ -12,7 +12,9 @@ export default function Footer() {
           <p>Email: zhenwei.liao@gmail.com</p>
         </div>
         <div className="w-fit flex flex-col gap-5">
-          <h4 className="text-lg text-end">Media</h4>
+          <h4 className="text-2xl text-end font-semibold font-sans">
+            Follow Me!
+          </h4>
           <div className="flex gap-7">
             <Link to={introduction.links.linkedin} title="Linkedin">
               <Linkedin size={40} />

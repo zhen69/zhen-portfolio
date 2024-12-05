@@ -19,6 +19,15 @@ export default function Contact() {
     });
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setForm({
+      name: "",
+      email: "",
+      message: "",
+    });
+  };
+
   return (
     <section
       id="contact"
@@ -36,6 +45,7 @@ export default function Contact() {
         <form
           ref={formRef}
           className="flex flex-col gap-8 bg-card p-11 rounded-lg"
+          onSubmit={handleSubmit}
         >
           <h2
             className="
@@ -53,7 +63,7 @@ export default function Contact() {
               value={form.name}
               onChange={handleChange}
               placeholder="What's your good name?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              className="bg-tertiary py-4 px-6 rounded-lg outline-none border-none font-medium text-primary"
             />
           </label>
           <label className="flex flex-col">
@@ -64,7 +74,7 @@ export default function Contact() {
               value={form.email}
               onChange={handleChange}
               placeholder="What's your web address?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              className="bg-tertiary py-4 px-6 rounded-lg outline-none border-none font-medium text-primary"
             />
           </label>
           <label className="flex flex-col">
@@ -75,7 +85,7 @@ export default function Contact() {
               value={form.message}
               onChange={handleChange}
               placeholder="What you want to say?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
+              className="bg-tertiary py-4 px-6 rounded-lg outline-none border-none font-medium text-primary"
             />
           </label>
 
